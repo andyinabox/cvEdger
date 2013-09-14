@@ -34,20 +34,17 @@ public:
     //		ofTexture tex;
     
     ofxCvColorImage	colorImg;
-    
     ofxCvGrayscaleImage grayImage;
-    //		ofxCvGrayscaleImage grayBg;
-    //		ofxCvGrayscaleImage grayDiff;
     ofxCvGrayscaleImage cannyImg;
-    //        ofxCvColorImage erodeImg;
+    ofxCvColorImage erodeImg;
     
-    
+    bool bErode;
     float capW;
     float capH;
+    int cannyThreshold1;
+    int cannyThreshold2;
     
     ofxCvContourFinder contourFinder;
-    
-    //		int threshold;
-    //		bool bLearnBakground;
+
     
 };
